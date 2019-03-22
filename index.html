@@ -29,9 +29,17 @@
     console.log("onReceivedActivityMessageViaJavascriptInterface "+event);
   }
   function postMessageToiOS(postData) {
-      alert('in');
+      alert('step01');
+      alert(postData);
+      if ( window.webkit.messageHandlers.reactNative ) {
+        alert("step02");
+        window.webkit.messageHandlers.reactNative.postMessage(postData)
+      }
+      else {
+        alert("else");
+      }
     
-      window.webkit.messageHandlers.reactNative.postMessage(postData)
+      
       //window.webkit.messageHandlers.callBackHandler.postMessage(postData);
   }
   var element_layer = document.getElementById('layer');
