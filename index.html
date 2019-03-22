@@ -29,6 +29,7 @@
     console.log("onReceivedActivityMessageViaJavascriptInterface "+event);
   }
   function postMessageToiOS(postData) {
+      alert('in');
       window.webkit.messageHandlers.reactNative.postMessage(postData)
       //window.webkit.messageHandlers.callBackHandler.postMessage(postData);
   }
