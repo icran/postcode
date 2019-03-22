@@ -29,7 +29,8 @@
     console.log("onReceivedActivityMessageViaJavascriptInterface "+event);
   }
   function postMessageToiOS(postData) {
-      window.webkit.messageHandlers.callBackHandler.postMessage(postData);
+      window.webkit.messageHandlers.reactNative.postMessage(postData)
+      //window.webkit.messageHandlers.callBackHandler.postMessage(postData);
   }
   var element_layer = document.getElementById('layer');
   function execDaumPostcode() {
