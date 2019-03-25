@@ -29,14 +29,14 @@
     console.log("onReceivedActivityMessageViaJavascriptInterface "+event);
   }
   function postMessageToiOS(postData) {
-      alert('step01');
+
       console.log("postData",postData);
       alert(postData.addr);
       if ( window.postMessage ) {
         alert("postmessage");
       }
       else {
-                alert("not postmessage");
+         alert("not postmessage");
       }
       if ( window.webkit.messageHandlers.reactNative ) {
         alert("step02");
