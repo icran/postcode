@@ -33,13 +33,11 @@
       alert(postData.addr);
     
       if ( window.postMessage ) {
-        alert("postmessage");
+        window.postMessage(postData.addr);
       }
-      else {
-         alert("not postmessage");
-      }
+    
       if ( window.webkit.messageHandlers.reactNative ) {
-        alert("step02");
+        alert("window.webkit.messageHandlers.reactNative");
         window.webkit.messageHandlers.reactNative.postMessage(postData)
       }
       else {
