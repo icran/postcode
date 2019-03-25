@@ -31,7 +31,7 @@
   function postMessageToiOS(postData) {
       alert('step01');
       console.log("postData",postData);
-      alert(postData);
+      alert(postData.addr);
       if ( window.webkit.messageHandlers.reactNative ) {
         alert("step02");
         window.webkit.messageHandlers.reactNative.postMessage(postData)
