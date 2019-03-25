@@ -30,7 +30,7 @@
   }
   function postMessageToiOS(postData) {
 
-      alert(postData.addr);
+      alert("주소 : " + postData.addr);
     
       if ( window.postMessage ) {
         window.postMessage(postData.addr);
