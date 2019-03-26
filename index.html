@@ -47,12 +47,10 @@
     
     
     
-      alert("13 주소 된다?!!! : " + postData.addr);
+    alert("14 주소 된다?!!! : " + postData.addr);
 
-    setTimeout(function() {
-      window.postMessage(postData.addr, "*")
-    }, 1000);
-    
+    window.postMessage(postData.addr, "*")
+
     alert("넘긴듯?");
 //    window.webkit.messageHandlers.callBackHandler.postMessage(postData, "*");
     
