@@ -38,10 +38,11 @@
     
     
     
-      alert("10 주소 된다?!!! : " + postData.addr);
+      alert("11 주소 된다?!!! : " + postData.addr);
 
-//    window.postMessage(postData.addr, "*");
-    window.webkit.messageHandlers.callBackHandler.postMessage(postData, "*");
+    window.postMessage(postData.addr, "*");
+    alert("넘긴듯?");
+//    window.webkit.messageHandlers.callBackHandler.postMessage(postData, "*");
     
 //    window.webkit.messageHandlers.reactNative.postMessage(postData);
   
