@@ -16,10 +16,11 @@
 <script>
   window.addEventListener("message", onReceivedPostMessage, false);
   function onReceivedPostMessage(event){
-    alert("onReceivedPostMessage 01");
+
     //..ex deconstruct event into action & params
     var action = event.data.action;
     var params = event.data.params;
+//        alert("onReceivedPostMessage params");
     console.log("onReceivedPostMessage "+event);
   }
   function onReceivedActivityMessageViaJavascriptInterface(json){
