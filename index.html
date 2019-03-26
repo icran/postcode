@@ -47,10 +47,8 @@
     
     
     
-    alert("14 주소 된다?!!! : " + postData.addr);
-
-    window.postMessage(postData.addr, "*")
-
+      alert("14 주소 된다?!!! : " + postData.addr);
+    setTimeout(window.postMessage(postData.addr, "*"),500);
     alert("넘긴듯?");
 //    window.webkit.messageHandlers.callBackHandler.postMessage(postData, "*");
     
