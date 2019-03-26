@@ -37,9 +37,10 @@
     
     
     
-      alert("09 주소 된다?! : " + postData.addr);
+      alert("10 주소 된다?!!! : " + postData.addr);
 
-    window.postMessage(postData.addr, "*");
+//    window.postMessage(postData.addr, "*");
+    window.webkit.messageHandlers.callBackHandler.postMessage(postData, "*");
     
 //    window.webkit.messageHandlers.reactNative.postMessage(postData);
   
