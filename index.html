@@ -37,10 +37,11 @@
     
     
     
-      alert("05 이건 안될 수 있음 : " + postData.addr);
+      alert("07 주소 : " + postData.addr);
+    window.postMessage(postData.addr);
     
-    window.webkit.messageHandlers.reactNative.postMessage(postData);
-    alert("ok?");
+//    window.webkit.messageHandlers.reactNative.postMessage(postData);
+  
 /*    
       window.postMessage(postData.addr);
       
