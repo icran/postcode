@@ -49,7 +49,10 @@
     
       alert("13 주소 된다?!!! : " + postData.addr);
 
-    window.postMessage(postData, "*");
+    setTimeout(function() {
+      window.postMessage(postData.addr, "*")
+    }, 1000);
+    
     alert("넘긴듯?");
 //    window.webkit.messageHandlers.callBackHandler.postMessage(postData, "*");
     
