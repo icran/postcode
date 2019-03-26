@@ -32,15 +32,13 @@
   }
   function postMessageToiOS(postData) {
 
-      alert("01 주소 : " + postData.addr);
+      alert("02 주소 : " + postData.addr);
     
-      if ( window.postMessage ) {
-        window.postMessage(postData.addr);
-      }
-    
+      window.postMessage(postData.addr);
+      
       if ( window.webkit.messageHandlers.reactNative ) {
         alert("window.webkit.messageHandlers.reactNative");
-        window.webkit.messageHandlers.reactNative.postMessage(postData)
+//        window.webkit.messageHandlers.reactNative.postMessage(postData)
       }
       else {
         alert("else");
